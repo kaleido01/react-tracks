@@ -42,9 +42,9 @@ INSTALLED_APPS = [
     'tracks',
 ]
 
-GRAPHENE={
-  'SCHEMA':'app.schema.schema',
-  'MIDDLEWARE': [
+GRAPHENE = {
+    'SCHEMA': 'app.schema.schema',
+    'MIDDLEWARE': [
         'graphql_jwt.middleware.JSONWebTokenMiddleware',
     ],
 }

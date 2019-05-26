@@ -86,7 +86,7 @@ class DeleteTrack(graphene.Mutation):
       raise GraphQLError("Not permitted to delete this track")
     
     track.delete()
-    track.save()
+    
     
     return DeleteTrack(track_id=track_id)
 
